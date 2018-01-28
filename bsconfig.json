@@ -1,0 +1,21 @@
+{
+  "name": "react-template",
+  "reason": {"react-jsx" : 2},
+  "sources": [
+    {
+      "dir": "src"
+    }
+  ],
+  "bsc-flags": ["-bs-super-errors"],
+  "package-specs": [{
+    "module": "es6",
+    "in-source": true
+  }],
+  "suffix": ".bs.js",
+  "namespace": true,
+  "bs-dependencies": [
+    "reason-react",
+    "re-classnames"
+  ],
+  "refmt": 3
+}
