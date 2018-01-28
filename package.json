@@ -6,6 +6,7 @@
     "dconfig": "cat ./dev.bsconfig.json > ./bsconfig.json; ",
     "build": "npm run pconfig && bsb -make-world && webpack --mode production --progress",
     "start": "npm run pconfig && bsb -make-world -w",
+    "clean": "bsb -clean-world",
     "test": "npm run dconfig && bsb -clean-world -make-world && jest",
     "webpack": "npm run pconfig && webpack -w --mode development --progress"
   },
