@@ -38,13 +38,8 @@ const config = {
     ],
   },
 
-  output: {
-    path: path.join(__dirname, "build"),
-    filename: 'index.js',
-  },
-
   resolve: {
-    extensions: ['.js', '.jsx', '.json', '.css', '.scss'],
+    extensions: ['.js', '.scss'],
   },
 };
 
