@@ -33,7 +33,6 @@
     "postcss-import": "^11.0.0",
     "postcss-loader": "^2.0.10",
     "postcss-nested": "^3.0.0",
-    "regenerator-runtime": "^0.11.1",
     "style-loader": "^0.19.1",
     "url-loader": "^0.6.2",
     "webpack": "^4.0.0-beta.0",
