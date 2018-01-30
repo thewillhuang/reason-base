@@ -3,12 +3,14 @@
   "reason": {"react-jsx" : 2},
   "sources": [
     {
-      "dir": "src"
+      "dir": "src",
+      "subdirs": true,
+      "type": "dev"
     }
   ],
   "bsc-flags": ["-bs-super-errors"],
   "package-specs": [{
-    "module": "es6",
+    "module": "commonjs",
     "in-source": true
   }],
   "suffix": ".bs.js",
@@ -16,6 +18,10 @@
   "bs-dependencies": [
     "reason-react",
     "re-classnames"
+  ],
+  "bs-dev-dependencies": [
+    "@glennsl/bs-jest",
+    "bs-react-test-renderer"
   ],
   "refmt": 3
 }
