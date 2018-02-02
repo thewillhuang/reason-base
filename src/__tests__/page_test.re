@@ -5,7 +5,7 @@ let _ =
 
 describe("Page", () => {
   test("renders", () => {
-    let tree = <Page one="Hello world!" two="will and kate!!!" /> |> ReactShallowRenderer.renderWithRenderer;
+    let tree = <Page message="REASONML" /> |> ReactShallowRenderer.renderWithRenderer;
 
     expect(tree) |> toMatchSnapshot;
   });

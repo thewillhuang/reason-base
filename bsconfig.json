@@ -4,8 +4,7 @@
   "sources": [
     {
       "dir": "src",
-      "subdirs": true,
-      "type": "dev"
+      "subdirs": true
     }
   ],
   "bsc-flags": ["-bs-super-errors"],
@@ -16,12 +15,10 @@
   "suffix": ".bs.js",
   "namespace": true,
   "bs-dependencies": [
+    "@glennsl/bs-jest",
+    "bs-react-test-renderer",
     "reason-react",
     "re-classnames"
-  ],
-  "bs-dev-dependencies": [
-    "@glennsl/bs-jest",
-    "bs-react-test-renderer"
   ],
   "refmt": 3
 }

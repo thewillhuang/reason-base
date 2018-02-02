@@ -1,1 +1,1 @@
-ReactDOMRe.renderToElementWithId(<Page one="Hello world!" two="will and kate!!!" />, "index");
+ReactDOMRe.renderToElementWithId(<Page message="REASON REACT!"/>, "index");

@@ -1,8 +1,14 @@
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
   entry: './src/index.bs.js',
+
+  output: {
+    path: path.join(__dirname, 'dist/'),
+    filename: '[name].[hash].js'
+  },
 
   module: {
     rules: [
@@ -37,6 +43,10 @@ const config = {
       },
     ],
   },
+
+  plugins: [new HtmlWebpackPlugin({
+    template: 'src/index.html'
+  })],
 
   resolve: {
     extensions: ['.js', '.scss'],
