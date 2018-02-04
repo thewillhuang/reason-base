@@ -2,11 +2,11 @@
   "name": "reason-app",
   "version": "0.1.0",
   "scripts": {
-    "build": "npm run clean && bsb -make-world && rm -fr dist && webpack -p --progress",
+    "build": "npm run clean && bsb -make-world && webpack -p --progress",
     "start": "npm run clean && bsb -make-world -w & npm run webpack",
-    "clean": "bsb -clean-world",
+    "clean": "rm -fr dist && bsb -clean-world",
     "test": "npm run clean && bsb -make-world && jest",
-    "webpack": "rm -fr dist && webpack-dev-server --hot -d -w --progress --open",
+    "webpack": "webpack-dev-server --hot -d -w --progress --open",
     "publish": "npm run build && aws s3 sync ./dist/ s3://reason-example-app --acl public-read"
   },
   "keywords": [
@@ -15,10 +15,10 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "reason-react": "^0.3.2",
     "re-classnames": "^0.0.3",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "reason-react": ">=0.3.0"
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "@glennsl/bs-jest": "^0.3.3",

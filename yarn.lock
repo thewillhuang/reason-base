@@ -4886,7 +4886,7 @@ realpath-native@^1.0.0:
   dependencies:
     util.promisify "^1.0.0"
 
-reason-react@>=0.3.0:
+reason-react@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/reason-react/-/reason-react-0.3.2.tgz#14574b619bd9bf2b6057d681867a5dfa69f2360f"
   dependencies:
